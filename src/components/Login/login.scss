@@ -1,0 +1,45 @@
+.login, .register, .contact{
+    h1{
+        text-align: center;
+    }
+    >.con{
+        width: 50%;
+        margin : auto ;
+        padding: 20px ;
+        border: 2px solid gray;
+        box-shadow: 10px 10px 8px #888888;
+        span{
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        input{
+            border: none;
+            width: 100%;
+            border-bottom: 2px solid;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            box-shadow: 10px 10px 8px #888888;
+            border: none;
+            margin: 10px 0;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .register{
+            background-color: blue;
+        }
+        textarea{
+            width: 100%;
+        }
+    }
+}

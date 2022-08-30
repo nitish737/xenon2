@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    width: 100%;
+    background-color: red;
+
+    >.left{
+        flex : 30% ;
+    }
+    >.mid{
+        flex : 40%;
+        background-color: yellow;
+    }
+    >.right{
+        flex: 30%;
+
+        .menu{
+            background-color: black;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            
+            li{
+                background-color: blueviolet;
+            }
+
+            a{
+                display: block;
+                background-color: green;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                &:hover{
+                    background-color: greenyellow;
+                    color : black;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width : 4000px){
+    nav{
+        >.right{
+            position: fixed;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            height: 100% ;
+            flex-direction: column;
+            
+            
+
+
+            ul{
+                top : 0 ;
+                left : 0 ;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                height: 100 vh;
+                justify-content: center;
+                flex-direction: column;
+                background-color: brown;
+                left: -100%;
+                transition: 0.3s ease;
+                opacity: 0;
+                height: 100vh;
+
+                
+                li{
+                    
+                }
+            }
+
+            >.active{
+                left : 0 ;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// nav >div{
+//     flex : 30% ;
+//     justify-content: center;
+
+// }
+
+// nav div .left h1{
+//     text-align: right;
+// }
+
+// nav .right ul{
+//     display: flex;
+// }
+
+// li {
+//     list-style: none;
+//     flex : 100% ;
+// }
+
+// nav .right ul li a{
+//     background-color: gray;
+//     display: block;
+//     color: wheat;
+//     padding: 10px 10px;
+//     text-decoration: none;
+//     text-align: center;
+// }
+
+// nav .right ul li a:hover{
+//     background-color: black;
+// }
+
+
+
+// h1{
+//     background-color: gray;
+// }
+
+
+// nav .right ul{
+//     left : 0 ;
+//     top : 0 ;
+//     background-color: gray;
+//     position: fixed;
+//     height: 100%;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// nav .right ul li{
+//     flex : 100%;
+//     background-color: green;
+// }
+
+
+
+
+
+
+
+
